@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5 - Button Clicked Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Project 1: Button Clicked</h1>
+
+    <!-- Tombol 1: Memanggil fungsi intro -->
+    <button onclick="intro()">Click to know me</button>
+
+    <!-- Tombol 2: Memanggil fungsi fun fact -->
+    <button onclick="funFact()">Click for fun fact</button>
+
+    <!-- Tempat untuk menampilkan hasil teks -->
+    <p id="output"></p>
+
+    <script>
+        // Fungsi untuk tombol pertama
+        function intro() {
+            document.getElementById("output").innerText = "Hi! I am learning software development at Timedoor Academy.";
+        }
+
+        // Fungsi untuk tombol kedua
+        function funFact() {
+            document.getElementById("output").innerText = "Fun Fact: JavaScript was originally created in just 10 days in 1995!";
+        }
+    </script>
+
+</body>
+
+</html>
